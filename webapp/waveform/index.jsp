@@ -93,10 +93,9 @@
 			<h3>Available Data <button type="button" id="collapseOptions" class="btn btn-sm btn-primary success"  data-toggle="collapse" data-target="#queryOptions" onclick="collapseControlText();">Hide Query Controls</button></h3>
 			<div id="queryOptions" class="row in">
 			<div class="container row" style="margin-top:5px;">
-			
 			<div id="queryBox" class="col-md-6">
 				<form name="queryform"  action="tsdQuery">
-					<p id="selectorBox"><strong>Lead: </strong><br/></p>
+				<p id="selectorBox"><strong>Lead: </strong><br/></p>
 			</div>
 			<div id="queryBox2" class="col-md-6">
 					<p><strong>Subject Id: </strong><input type="text" size="10" id="subjectid-field" value="ncc1701A"> <span class="littleNote"> preset datasets to query against (try: ncc1701, ncc1701A, ncc1701B, ncc1701C, ncc1701D)</span></p>
