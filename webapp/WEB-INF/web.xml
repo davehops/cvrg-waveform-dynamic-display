@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>cvrg-waveform-dynamic-display</display-name>
+  <servlet>
+    <description></description>
+    <display-name>index</display-name>
+    <servlet-name>index</servlet-name>
+    <servlet-class>edu.jhu.cvrg.servlet.TSDBacking</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/waveform</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ACServlet</display-name>
+    <servlet-name>ACServlet</servlet-name>
+    <servlet-class>edu.jhu.cvrg.servlet.AutoCompleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ACServlet</servlet-name>
+    <url-pattern>/waveform/autocomplete</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TSDServlet</display-name>
+    <servlet-name>TSDServlet</servlet-name>
+    <servlet-class>edu.jhu.cvrg.servlet.QueryHandler</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TSDServlet</servlet-name>
+    <url-pattern>/waveform/tsd</url-pattern>
+  </servlet-mapping>
+</web-app>
