@@ -13,16 +13,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-    <display-name>ACServlet</display-name>
-    <servlet-name>ACServlet</servlet-name>
-    <servlet-class>edu.jhu.cvrg.servlet.AutoCompleteServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ACServlet</servlet-name>
-    <url-pattern>/waveform/autocomplete</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
     <display-name>TSDServlet</display-name>
     <servlet-name>TSDServlet</servlet-name>
     <servlet-class>edu.jhu.cvrg.servlet.QueryHandler</servlet-class>
