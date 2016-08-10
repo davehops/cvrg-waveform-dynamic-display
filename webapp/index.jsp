@@ -1,7 +1,4 @@
-
 <%@ page contentType="text/html;charset=UTF-8" %>
-
-
 <html>
     <head>
         <title>Electrophysiology Data Discovery Index: Electrophysiology Data Discovery Index Home</title>
@@ -15,23 +12,16 @@
 	    <link rel="stylesheet" href="static/css/bootstrap/dspace-theme.css" type="text/css" />
 
         <link rel="alternate" type="application/rdf+xml" title="Items in Electrophysiology Data Discovery Index" href="/feed/rss_1.0/site"/>
-
         <link rel="alternate" type="application/rss+xml" title="Items in Electrophysiology Data Discovery Index" href="/feed/rss_2.0/site"/>
-
         <link rel="alternate" type="application/rss+xml" title="Items in Electrophysiology Data Discovery Index" href="/feed/atom_1.0/site"/>
-
         <link rel="search" type="application/opensearchdescription+xml" href="/open-search/description.xml" title="DSpace"/>
-
         
-	<script type='text/javascript' src="static/js/jquery/jquery-1.10.2.min.js"></script>
-	<script type='text/javascript' src='static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
-	<script type='text/javascript' src='static/js/bootstrap/bootstrap.min.js'></script>
-	<script type='text/javascript' src='static/js/holder.js'></script>
-	<script type="text/javascript" src="utils.js"></script>
-    <script type="text/javascript" src="static/js/choice-support.js"> </script>
-
-    
-    
+		<script type='text/javascript' src="static/js/jquery/jquery-1.10.2.min.js"></script>
+		<script type='text/javascript' src='static/js/jquery/jquery-ui-1.10.3.custom.min.js'></script>
+		<script type='text/javascript' src='static/js/bootstrap/bootstrap.min.js'></script>
+		<script type='text/javascript' src='static/js/holder.js'></script>
+		<script type="text/javascript" src="utils.js"></script>
+	    <script type="text/javascript" src="static/js/choice-support.js"> </script>
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-7941687-10']);
@@ -43,32 +33,19 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-    
-    
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="static/js/html5shiv.js"></script>
-  <script src="static/js/respond.min.js"></script>
+  <script src="static/js/html5shiv.js"></script><script src="static/js/respond.min.js"></script>
 <![endif]-->
 
     </head>
-
     
     <body class="undernavigation">
+    <a class="sr-only" href="#content">Skip navigation</a><header class="navbar navbar-inverse navbar-fixed-top">    
     
-<%@ page import="edu.jhu.cvrg.servlet.TSDBBacking" %> 
-
-<%-- <%	
-	TSDBBacking tdb = new TSDBBacking();
-		String classyDataOutput = tdb.retrieveSingleLead("II");%> --%>
-    
-<a class="sr-only" href="#content">Skip navigation</a>
-<header class="navbar navbar-inverse navbar-fixed-top">    
-    
-            <div class="container">
-                
-       <div class="navbar-header">
+	<div class="container">
+      <div class="navbar-header">
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
@@ -86,15 +63,11 @@
                <li><a href="/community-list">Communities<br/>&amp;&nbsp;Collections</a></li>
 				<li class="divider"></li>
 				<li class="dropdown-header">Browse Items by:</li>
-				
-				      			<li><a href="/browse?type=dateissued">Date Issued</a></li>
-					
-				      			<li><a href="/browse?type=author">Author</a></li>
-					
-				      			<li><a href="/browse?type=title">Title</a></li>
-					
-				      			<li><a href="/browse?type=subject">Subject</a></li>
-            </ul>
+	      			<li><a href="/browse?type=dateissued">Date Issued</a></li>
+	      			<li><a href="/browse?type=author">Author</a></li>
+	      			<li><a href="/browse?type=title">Title</a></li>
+	      			<li><a href="/browse?type=subject">Subject</a></li>
+	         </ul>
           </li>
           <li class=""><script type="text/javascript">
 <!-- Javascript starts here
@@ -105,20 +78,15 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.ht
        <div class="nav navbar-nav navbar-right">
 		<ul class="nav navbar-nav navbar-right">
          <li class="dropdown">
-         
              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign on to: <b class="caret"></b></a>
-	             
              <ul class="dropdown-menu">
                <li><a href="/mydspace">My EDDI</a></li>
                <li><a href="/subscribe">Receive email<br/>updates</a></li>
                <li><a href="/profile">Edit Profile</a></li>
-
-		
              </ul>
            </li>
           </ul>
-          
-	
+ 	
 	<form method="get" action="/simple-search" class="navbar-form navbar-right" scope="search">
 	    <div class="form-group">
           <input type="text" class="form-control" placeholder="Search&nbsp;EDDI" name="query" id="tequery" size="25"/>
@@ -134,29 +102,19 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.ht
 
 <main id="content" role="main">
 
-                
-
 <div class="container">
-                
-
-<ol class="breadcrumb btn-success">
-
-<li>Electrophysiology Data Discovery Index</li>
-
-</ol>
-
+	<ol class="breadcrumb btn-success">
+	<li>Electrophysiology Data Discovery Index</li>
+	</ol>
 </div>                
 <div class="container">
-
 <div class="jumbotron">
   <div style="padding-bottom:25px;" class="row">
   <div class="col-md-6">
 	<p>Welcome </p>
-	<p class="normalPP"><%-- <%=classyDataOutput%> --%></p>
-	
-		<p><a class="button" href="/mydspace"><button type="button" class="btn btn-info">Log In</button></a>&nbsp;&nbsp;
-		<a class="button" href="/register"><button type="button" class="btn btn-success">Sign Up</button></a></p>
-		  
+	<p class="normalPP"></p>
+	<p><a class="button" href="/mydspace"><button type="button" class="btn btn-info">Log In</button></a>&nbsp;&nbsp;
+	<a class="button" href="/register"><button type="button" class="btn btn-success">Sign Up</button></a></p>
 	
   </div>
   <div style="" class="col-md-6">
@@ -177,27 +135,16 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.ht
   </div>
 </div>
 
-
-
 <div class="row">
-        <div class="col-md-12">
-        
-        
-     
-     
-     
-     
-	<div class="col-md-12 homeCom">		
+      <div class="col-md-12">
+      <div class="col-md-12 homeCom">		
                <h3>Communities in EDDI</h3>
                 <p>Choose a community to browse its collections and upload data.</p>
 				<div class="list-group">
 <div class="list-group-item row">
 
 	<div class="col-md-12">
-		
-		<h4 class="list-group-item-heading"><a href="/handle/11614/1">ECG</a>
-
-		</h4>
+		<h4 class="list-group-item-heading"><a href="/handle/11614/1">ECG</a></h4>
 		<p></p>
     </div>
 </div>                            
@@ -220,9 +167,7 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.ht
           <h3 style="margin:5px 5px 10px 50px;">Recent&nbsp;Submissions
               
 	    <a href="/feed/rss_1.0/site"><img src="image/rss1.gif" alt="RSS Feed" width="80" height="15" style="margin: 3px 0 3px" /></a>
-	
 	    <a href="/feed/rss_2.0/site"><img src="image/rss2.gif" alt="RSS Feed" width="80" height="15" style="margin: 3px 0 3px" /></a>
-	
 	    <a href="/feed/atom_1.0/site"><img src="image/rss.gif" alt="RSS Feed" width="36" height="15" style="margin: 3px 0 3px" /></a>
 	
           </h3>
@@ -526,11 +471,9 @@ document.write('<a href="#" onClick="var popupwin = window.open(\'/help/index.ht
              Theme by <a href="http://www.cineca.it"><img
                                     src="image/logo-cineca-small.png"
                                     alt="Logo CINECA" /></a>
-			<div id="footer_feedback" class="pull-right">                                    
-                                <p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2015&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-
-                                <a target="_blank" href="/feedback">Feedback</a>
-                                &nbsp;-&nbsp;<a href="/EDDI_help">Help</a></p>
-                                </div>
+			<div id="footer_feedback" class="pull-right">  
+				<p class="text-muted">Copyright&nbsp;&copy;&nbsp;2002-2016 CardioVascular Research Grid</p>
+            </div>
 			</div>
     </footer>
     

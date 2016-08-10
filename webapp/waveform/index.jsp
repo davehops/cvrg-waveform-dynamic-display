@@ -38,17 +38,7 @@
     </head>
     <body class="undernavigation" onload="init()">
     
-<%-- <%@ page import="edu.jhu.cvrg.servlet.FileCounter" %>
-<% FileCounter fcc = new FileCounter();
-	String numberOutputOne = fcc.sixSix; 
-	String numberOutput = fcc.threeThree; %> --%>
-    
-<%-- <%@ page import="edu.jhu.cvrg.servlet.TSDBBacking" %> 
-<%	
-	TSDBBacking tdb = new TSDBBacking();
-%> --%>
-
-<a class="sr-only" href="#content"><%-- <%=numberOutput%> --%>Skip navigation<%-- <%=numberOutputOne%> --%></a>
+<a class="sr-only" href="#content">Skip navigation</a>
 <header class="navbar navbar-inverse navbar-fixed-top">    
     
             <div class="container">
@@ -169,8 +159,7 @@
 			<p class="text-muted">Theme by <a href="http://www.cineca.it"><img src="../image/logo-cineca-small.png" alt="Logo CINECA" /></a></p>
 		</div>
 		<div id="footer_feedback" class="pull-right">
-			<p class="text-muted"><a target="_blank" href="http://www.dspace.org/">DSpace Software</a> Copyright&nbsp;&copy;&nbsp;2002-2015&nbsp; <a target="_blank" href="http://www.duraspace.org/">Duraspace</a>&nbsp;-<a target="_blank" href="/feedback">Feedback</a> &nbsp;-&nbsp;<a
-					href="/EDDI_help">Help</a></p>
+			<p class="text-muted">Copyright&nbsp;&copy;&nbsp;2002-2016 CardioVascular Research Grid</p>
 		</div>
 	</div>
 </footer>
